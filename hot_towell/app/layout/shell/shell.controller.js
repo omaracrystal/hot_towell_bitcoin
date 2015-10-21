@@ -3,3 +3,14 @@
 //(2) Sometimes called command shell, a shell is the command processor interface. The command processor is the program that executes operating system commands. The shell, therefore, is the part of the command processor that accepts commands. After verifying that the commands are valid, the shell sends them to another part of the command processor to be executed.
 
 //UNIX systems offer a choice between several different shells, the most popular being the Cshell, the Bourne shell, and the Korn shell. Each offers a somewhat different command language.
+
+shell.controller('ShellController', function($scope){
+
+});
+
+// /* recommended */
+// function ShellController() {
+//     var vm = this;
+//     vm.name = {};
+//     vm.sendMessage = function() { };
+// }

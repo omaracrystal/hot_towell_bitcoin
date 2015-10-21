@@ -1,8 +1,6 @@
-// angular
-//   .module('app.chart', [
-//     'app.header',
-//     'app.shell'
-// ]);
+chart.controller('ChartController', function($scope){
+
+});
 
 // /* recommended */
 // function ChartController() {
