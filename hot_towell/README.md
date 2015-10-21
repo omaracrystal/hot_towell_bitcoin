@@ -154,4 +154,25 @@ function config($routeProvider) {
 **Why?:** DOM manipulation can be difficult to test, debug, and there are often better ways (e.g. **CSS**, **animations**, **templates**)
 
 
-## 
+##controllerAs with vm
+
+Use a capture variable for this when using the controllerAs syntax. Choose a consistent variable name such as vm, which stands for ViewModel.
+
+**Why?**: The this keyword is contextual and when used within a function inside a controller may change its context. Capturing the context of this avoids encountering this problem.
+
+```
+/* avoid */
+function CustomerController() {
+    this.name = {};
+    this.sendMessage = function() { };
+}
+```
+
+```
+/* recommended */
+function CustomerController() {
+    var vm = this;
+    vm.name = {};
+    vm.sendMessage = function() { };
+}
+```
