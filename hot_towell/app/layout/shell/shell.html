@@ -1,0 +1,13 @@
+<!-- Once I start adding in routing to multiple views I'll want a view that acts as the container for the other views. I call this the shell. The shell will need a navigation view to help with routing between the content views. -->
+
+<div class="jumbotron">
+
+  <header data-ng-include='../header/header.html'></header>
+
+  <input data-ng-include='../../components/input/input.html'></input>
+
+  <output>
+    <table data-ng-include='../../components/input/table.html'></table>
+    <chart data-ng-include='../../components/input/chart.html'></chart>
+  </output>
+</div>

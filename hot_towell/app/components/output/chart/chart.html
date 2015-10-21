@@ -1,0 +1,13 @@
+<div data-ng-controller='chart as vm' class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <nvd3-line-chart
+      data="bitcoinHistoricalData"
+      xAxisTickFormat="xAxisTickFormatFunction()"
+      height="350"
+      showXAxis="true"
+      showYAxis="true"
+      isArea="true"
+      useInteractiveGuideLine="true">
+    <svg></svg>
+  </div>
+</div>

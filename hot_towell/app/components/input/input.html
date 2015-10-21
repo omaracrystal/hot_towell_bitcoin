@@ -1,0 +1,15 @@
+<div data-ng-controller='input as vm' class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-6">
+      <form role="form">
+        <label for="starting-investment">Initial Investment (USD)</label>
+        <input type="number" ng-model="initalAmt" class="form-control" placeholder="{{initalAmt}}">
+      </form>
+      <br>
+      <p>Current Price (USD): <span class="number">{{currRate | currency }}</span></p>
+    </div>
+    <div class="col-sm-6">
+      <img src="../../images/bitcoin.png" width="100">
+    </div>
+  </div>
+</div>
